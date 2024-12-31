@@ -91,7 +91,7 @@ class _MovieDisplayState extends State<MovieDisplay> {
                               width: size.width,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(20),
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               child: SingleChildScrollView(
                                 child: Column(
@@ -114,7 +114,7 @@ class _MovieDisplayState extends State<MovieDisplay> {
                                       ),
                                     ),
                                     const SizedBox(
-                                      height: 20,
+                                      height: 5,
                                     ),
                                     // For movie title
                                     Text(
