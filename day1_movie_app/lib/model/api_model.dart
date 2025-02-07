@@ -1,25 +1,28 @@
 class Movie {
-  String title;
-  String? image;
-  String? director;
-  String? rating;
-  String? duration;
-  late double price;
+  final String title;
+  final String? image;
+  final String? director;
+  final String? rating;
+  final String? duration;
+  final double price;
 
-  Movie(
-      {required this.title,
-      required this.image,
-      required this.director,
-      required this.rating,
-      required this.duration,
-      required this.price});
+  Movie({
+    required this.title,
+    this.image,
+    this.director,
+    this.rating,
+    this.duration,
+    required this.price,
+  });
 
-  factory Movie.fromJson(Map<String,dynamic> json)=>Movie(
-      title: json['title'],
-      image: json['image'],
-      director: json['director'],
-      rating: json['rating'],
-      duration: json['duration'],
-      price: double.tryParse(json['price'].toString()) ?? 0.0
-  );
+  factory Movie.fromJson(Map<String, dynamic> json) {
+    return Movie(
+      title: json['title'] ?? 'Unknown Title',
+      image: json['image'] as String?,
+      director: json['director'] as String?,
+      rating: json['rating'] as String?,
+      duration: json['duration'] as String?,
+      price: double.tryParse(json['price']?.toString() ?? '0') ?? 0.0,
+    );
+  }
 }
