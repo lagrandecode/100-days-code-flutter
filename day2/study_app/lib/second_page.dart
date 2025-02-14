@@ -61,6 +61,32 @@ class SecondPage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color(0xFFDEE2FE),
                   borderRadius: BorderRadius.circular(10)),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                        color: Colors.grey.withOpacity(0.3)
+                        ),
+                      ),
+                      Container(
+
+                                              width: 120,
+                                              height: 35,
+                                              decoration: BoxDecoration(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.circular(20),
+                                              ),
+                                            )
+                    ],
+                  ),
+                ],
+              ),
             ),
 
           ],
