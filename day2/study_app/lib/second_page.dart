@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_app/widgets/teacher_info.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({super.key});
@@ -24,7 +25,7 @@ class SecondPage extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 height: 50,
                 decoration: BoxDecoration(
-                    color: Colors.black.withBlue(220).withOpacity(0.1),
+                    color: Color(0xFFEAEEFF),
                     borderRadius: BorderRadius.circular(20.0)),
                 child: Row(
                   children: [
@@ -39,7 +40,7 @@ class SecondPage extends StatelessWidget {
                     Text(
                       "Search",
                       style: TextStyle(
-                          fontSize: 18.0, color: Colors.black.withOpacity(0.5)),
+                          fontSize: 18.0, color: Colors.black.withOpacity(0.2)),
                     ),
                     SizedBox(
                       height: 10,
@@ -60,36 +61,52 @@ class SecondPage extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                   color: Color(0xFFDEE2FE),
-                  borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
+                        margin: EdgeInsets.only(top: 30,left: 30),
                         width: 40,
                         height: 40,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                        color: Colors.grey.withOpacity(0.3)
+                        color: Color(0xFFEAEEFF),
                         ),
+                        child: Icon(Icons.calculate),
                       ),
                       Container(
+                        margin: EdgeInsets.only(right: 15),
 
                                               width: 120,
                                               height: 35,
                                               decoration: BoxDecoration(
-                      color: Colors.amber,
+                      color: Color(0xFFEAEEFF),
                       borderRadius: BorderRadius.circular(20),
                                               ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 5,right: 5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Homework",style: TextStyle(color: Colors.black),),
+                              Icon(Icons.check_circle,color: Colors.black,)
+                            ],
+                          ),
+                        ),
                                             )
                     ],
                   ),
+                  
                 ],
               ),
             ),
-
+            SizedBox(height: 20,),
+            TeacherInfo()
           ],
+
         ),
       ),
     );
