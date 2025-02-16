@@ -104,6 +104,7 @@ class SecondPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20,),
+            _buildSection("Events"),
             TeacherInfo()
           ],
 
