@@ -9,6 +9,15 @@
       <excludeFolder url="file://$MODULE_DIR$/day2/study_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/day2/study_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/day2/study_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/day3_banking_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/day3_banking_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/day3_banking_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/day4/logistics/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/day4/logistics/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/day4/logistics/build" />
+      <excludeFolder url="file://$MODULE_DIR$/day5_googlesheet/googlesheet/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/day5_googlesheet/googlesheet/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/day5_googlesheet/googlesheet/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
